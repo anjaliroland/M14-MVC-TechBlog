@@ -29,6 +29,7 @@ Post.init(
         date_written: {
             type: DataTypes.DATE,
             allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
     }, {
         sequelize,
