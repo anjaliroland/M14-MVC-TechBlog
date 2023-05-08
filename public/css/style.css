@@ -46,14 +46,14 @@ header {
 }
 
 .homePge-card {
-   border: 4px solid var(--neon-green);
+   border: 4px solid var(--green);
    margin: 2%;
    background-color: var(--white);
    color: var(--dark);
 }
 
 .home-card-header {
-   background-color: var(--neon-green);
+   background-color: var(--green);
    padding: 2%;
 }
 
