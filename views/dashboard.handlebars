@@ -1,0 +1,22 @@
+    {{#if posts}}
+    <h2 id="dashboard-title">My Posts</h2>
+    {{#each posts}}
+    <div class="dash-card card-body">
+        <div class="card-header dash-card-header">
+            <a id="dash-post-link" class="card-title" href="/posts/{{id}}">{{title}}</a>
+            <p class="card-subtitle mb-2 text-muted dash-user">Posted on {{format_date date_created}}</p>
+        </div>
+        </br>
+        <p id="dash-post-content" class="card-text">{{content}}</p>
+    </div>
+    <div id="dash-comments">
+        <ul>
+            {{#each comments}}
+            <li class="comment-list">" {{comment_text}} " - {{user.username}}</li>
+             {{/each}}
+        </ul>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>No posts have been created yet.</p>
+    {{/if}}

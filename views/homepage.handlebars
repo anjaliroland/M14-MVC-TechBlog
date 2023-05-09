@@ -1,3 +1,4 @@
+{{#if logged_in}}   
     {{#if posts}}
     <h2 id="homepage-title">Posts</h2>
     {{#each posts}}
@@ -13,3 +14,8 @@
     {{else}}
     <p>No posts have been created yet.</p>
     {{/if}}
+{{else}}
+<div class="welcomeMessage text-center">
+    <p><a href="/login">Log in</a> or <a href="/signup">sign up</a> to enter blog!</p>
+</div>
+{{/if}}

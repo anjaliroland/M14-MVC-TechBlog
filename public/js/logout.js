@@ -6,7 +6,7 @@ document.querySelector("#logout").addEventListener("click",e=>{
         if(res.ok){
            location.reload()
         } else {
-            alert("trumpet sound")
+            alert("error try again please")
         }
     })
 })

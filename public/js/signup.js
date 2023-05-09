@@ -15,7 +15,7 @@ signupForm.addEventListener("submit", async (e) => {
             },
         });
         if (res.ok) {
-            location.href = "/";
+            location.href = "/dashboard";
         } else {
             alert("password needs to be longer than 6 characters");
         }
